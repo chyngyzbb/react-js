@@ -1,9 +1,14 @@
 import React from "react";
+import { useState } from "react"
 
 function Footer(){
+    const [color,setColor]=useState(true)
     return(
         <div>
-            <h5>I' m Footer</h5>
+            <button
+            
+            onClick={()=>setColor(!color)}
+            >footer</button>
         </div>
     )
 }
