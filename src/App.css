@@ -5,3 +5,16 @@
 .text{
   color: red;
 }
+.modal{
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background: rgb(14, 24, 0);
+  position: absolute;
+  left: 37%;
+  top: 40%;
+  transition: .3s;
+}

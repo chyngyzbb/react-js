@@ -1,16 +1,16 @@
 import './App.css';
 import Footer from './components/Footer';
-import Header from './components/Header';
+// import Header from './components/Header';
 
 import { useState } from 'react';
 
 
 // props
-// hooks -> useState
+// hooks -> 
 
 function App() {
   const [counter, setCounter]=useState(0)
-  const [color,setColor]=useState(true)
+  const [color,setColor]=useState('')
   console.log(counter);
   const getValue=(num)=>{
     console.log(num);
@@ -21,16 +21,31 @@ function App() {
     <div className="App">
       <h1>{counter}</h1>
       <button
-      onClick={()=>setCounter(counter+1)}
-      >plus</button>
+      style={{
+        background:color==="inc"?'yellow':'red'
+      }}
+      onClick={()=>{
+        setCounter(counter+1)
+        setColor("inc")
+      }}
+      >increment</button>
       <button
-      onClick={()=>setCounter(counter-1)}
-      >minus</button>
-      <Header
+        style={{
+          background:color==="dec"?'yellow':'red'
+        }}
+      onClick={()=>{
+        setCounter(counter-1)
+        setColor('dec')
+      }}
+      >decrement</button>
+      {/* <Header
+      
        getValue={getValue}
         arrou={arr} 
-       text='Pello'/> 
-        <Footer/>
+       text='Pello'/>  */}
+        <Footer
+        counter={counter}
+        />
      </div> 
   )
 }
