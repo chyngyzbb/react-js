@@ -22,7 +22,7 @@ function App() {
       <h1>{counter}</h1>
       <button
       style={{
-        background:color==="inc"?'yellow':'red'
+        background:color==="inc"?'yellow':'grey'
       }}
       onClick={()=>{
         setCounter(counter+1)
@@ -31,7 +31,7 @@ function App() {
       >increment</button>
       <button
         style={{
-          background:color==="dec"?'yellow':'red'
+          background:color==="dec"?'yellow':'grey'
         }}
       onClick={()=>{
         setCounter(counter-1)
