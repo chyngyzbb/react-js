@@ -2,7 +2,7 @@ import React from "react";
 
 
 function Example({getValue}){
-    let str="Salam"
+    let str="Kandai"
     return(
         <div>
             <h4 className="text">Hi i' m For Example</h4>
